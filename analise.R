@@ -22,3 +22,15 @@ legend("topright",
        pch = c(19, NA),
        lty = c(NA, 1),
        lwd = c(NA, 2))
+
+symbols(runif(10, 0, 10), runif(10, 0, 10),
+        circles = runif(10, 0.3, 1),
+        inches = FALSE,
+        add = TRUE,
+        fg = "blue")
+
+symbols(runif(5, 0, 10), runif(5, 0, 10),
+        rectangles = matrix(runif(10, 0.5, 1.5), ncol = 2),
+        inches = FALSE,
+        add = TRUE,
+        fg = "green")
